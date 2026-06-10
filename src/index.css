@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Arabic", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* RTL overrides for specific absolute widgets */
+.matches-rtl {
+  display: flex;
+}
+html[dir="rtl"] .matches-rtl {
+  flex-direction: row-reverse !important;
+}
+
+/* Smooth keyframes for interactive element entries */
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-radial-gradient-appreciation {
+  background: radial-gradient(circle at 50% 50%, #0f172a 0%, #030712 100%);
+}

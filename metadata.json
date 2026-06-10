@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Kabul Property Hub",
+  "description": "Enterprise real estate marketplace platform for Kabul and Afghanistan, featuring AI-powered multilingual translations, advanced conversational search, interactive maps, and investment analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
